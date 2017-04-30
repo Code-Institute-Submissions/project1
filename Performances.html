@@ -3,8 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Monkees - Performances</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>The Monkees - Perforances</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: lightblue;
+		}
+		video{
+			width: 80%;
+		}
+		audio{
+			width: 80%
+		}
+
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -17,5 +29,39 @@
 		</ul>
 	</div>
 	</nav>
+	<div class="container" align="center">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>Day Dream Believer</h3>
+				<video controls="controls" preload="metadata">
+					<source src="Video/TheMonkees.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+			<h3>Day Dream Believer</h3>
+				<audio controls="controls" preload="metadata" loop>
+					<source src="Audio/DaydreamBeliever.mp3"/>
+				</audio>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+			<h3>Im a Believer</h3>
+				<audio controls="controls" preload="metadata" loop>
+					<source src="Audio/ImABeliever.mp3"/>
+				</audio>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+			<h3>Stepping Stone</h3>
+				<audio controls="controls" preload="metadata" loop>
+					<source src="Audio/SteppingStone.mp3"/>
+				</audio>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
