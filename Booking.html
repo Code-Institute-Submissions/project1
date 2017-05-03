@@ -8,44 +8,54 @@
 	<style type="text/css">
 		label{
 			display: block;
-			align-self:center;
 		}
 		body{
+			background-image: url(images/music1.jpg);
+			background-size: 200px;
+			font-size: 20px;
+			font-family: "Times New Roman";
+		}
+		.container {
 			background-color: lightblue;
+			padding-bottom: 20px;
+		}
+		legend{
+			border: 0;
 		}
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
 	<div class="container">
-		<ul class="nav navbar-nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="Photos.html">Photos</a></li>	
-			<li><a href="Performances.html">Performances</a></li>	
-			<li><a href="Booking.html">Booking</a></li>		
-		</ul>
+		<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Photos.html">Photos</a></li>	
+				<li><a href="Performances.html">Performances</a></li>	
+				<li><a href="Booking.html">Booking</a></li>		
+			</ul>
+		</nav>
 	</div>
-	</nav>
+
 	<div class="container">
 		<form id="BookingForm" action="" method="post">
-		<fieldset>
-			<legend>Booking Form</legend>
-			<label for="firstName">Firstname:</label>
-			<input id="firstName" type="text" name="fname" placeholder="Enter your first name" required="" />
-			<label for="surname">Surname:</label>
-			<input id="surname" type="text" name="sname" placeholder="Enter your surname" required="" />
-			<label for="email">Email:</label>
-			<input id="email" type="email" name="email" placeholder="Enter your email address" required="" />
-			<label for="phoneNum">Phone Number:</label>
-			<input id="phoneNum" type="Number" name="phonenum" placeholder="Enter your contact number" required="" />
-			<label for="bookingDate">Date of Booking:</label>
-			<input id="bookingDate" type="Date" name="date" required="" />
-			<label for="typeOfEvent">Type of Event:</label>
-			<input id="typeOfEvent" type="radio" name="Public" required="" />Public
-			<input id="typeOfEvent" type="radio" name="Public" required="" />Private
-			<label for="submit"></label>
-			<input type="submit" value="submit"/>
-		</fieldset>
+			<fieldset>
+				<legend>Booking Form</legend>
+				<label for="firstName">Firstname:</label>
+				<input id="firstName" type="text" name="fname" placeholder="Enter your first name" required="" />
+				<label for="surname">Surname:</label>
+				<input id="surname" type="text" name="sname" placeholder="Enter your surname" required="" />
+				<label for="email">Email:</label>
+				<input id="email" type="email" name="email" placeholder="Enter your email address" required="" />
+				<label for="phoneNum">Phone Number:</label>
+				<input id="phoneNum" type="Number" name="phonenum" placeholder="Enter your phone number" required="" />
+				<label for="bookingDate">Date of Booking:</label>
+				<input id="bookingDate" type="Date" name="date" required="" />
+				<label for="typeOfEvent">Type of Event:</label>
+				<input id="typeOfEvent" type="radio" name="Public" required="" />Public
+				<input id="typeOfEvent" type="radio" name="Public" required="" />Private
+				<label for="submit"></label>
+				<input type="submit" value="submit"/>
+			</fieldset>
 		</form>
 	</div>
 </body>
