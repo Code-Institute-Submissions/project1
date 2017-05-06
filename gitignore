@@ -1,0 +1,7 @@
+git add .
+node_modules/
+Audio
+Video
+images
+bower_components/
+node_modules/

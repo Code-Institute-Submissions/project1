@@ -1,0 +1,22 @@
+{
+  "name": "project1",
+  "description": "- Website to show photos, videos and play music for The Monkees band. Will include a form to submit bookings for the band.",
+  "main": "script.js",
+  "authors": [
+    "David Watson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dawatson8001/project1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
