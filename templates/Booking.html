@@ -1,70 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Monkees</title>
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-	<style type="text/css">
-		label{
-			display: block;
-		}
-		body{
-			background-image: url(../images/music1.jpg);
-			background-size: 200px;
-			font-size: 20px;
-			font-family: "Times New Roman";
-		}
-		.container {
-			background-color: lightblue;
-			padding-bottom: 20px;
-		}
-		legend{
-			border: 0;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<nav class="navbar navbar-inverse">
-			<ul class="nav navbar-nav">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../templates/Photos.html">Photos</a></li>	
-				<li><a href="../templates/Performances.html">Performances</a></li>	
-				<li><a href="../templates/Booking.html">Booking</a></li>		
-			</ul>
-		</nav>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-3">
-			</div>
-			<div class="col-xs-6">	
-				<form name="bookingForm" data-ng-submit="submitForm()" novalidate>
-					<div class="form-group">
-
-
-
-				<label for="firstName">Firstname:</label>
-				<input id="firstName" type="text" name="fname" placeholder="Enter your first name" class="form-control" data-ng-model="bookingForm.fname.$pristine" required />
-				<p data-ng-show="bookingForm.fname.$pristine">
-
-				<label for="surname">Surname:</label>
-				<input id="surname" type="text" name="sname" placeholder="Enter your surname" required="" />
-				<label for="email">Email:</label>
-				<input id="email" type="email" name="email" placeholder="Enter your email address" required="" />
-				<label for="phoneNum">Phone Number:</label>
-				<input id="phoneNum" type="Number" name="phonenum" placeholder="Enter your phone number" required="" />
-				<label for="bookingDate">Date of Booking:</label>
-				<input id="bookingDate" type="Date" name="date" required="" />
-				<label for="typeOfEvent">Type of Event:</label>
-				<input id="typeOfEvent" type="radio" name="Public" required="" />Public
-				<input id="typeOfEvent" type="radio" name="Public" required="" />Private
-				<label for="submit"></label>
-				<input type="submit" value="submit"/>
-			</fieldset>
-		</form>
-	</div>
-</body>
-</html>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p>The Monkees travel across the UK for performances for their Fans, whether it's a local party or a concert, we endeavour to satisfy all music fans!! If you would like to make a booking fill in the form below and submit, we shall be in touch soon.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">  
+        <form name="bookingForm" data-ng-submit="submitForm()" novalidate>
+          <div class="form-group">
+            <label>Firstname:</label>
+            <input type="text" name="fname" class="form-control" data-ng-model="client.fname" required>
+          </div>
+          <div class="form-group">
+            <label>Surname:</label>
+            <input type="text" name="sname" class="form-control" data-ng-model="client.sname" required>
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" data-ng-model="client.email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number:</label>
+            <input type="Number" name="phonenum" class="form-control" data-ng-model="client.phonenum" required>
+          </div>
+          <!--<div class="form-group">
+            <label>Date of Booking:</label>
+            <input type="Date" name="bookingdate" class="form-control" data-ng-model="client.bookingdate" required>
+          </div>-->
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+    </div>
+  </div>

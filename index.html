@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='BookingApp'>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/">
 	<title>The Monkees</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
 	<style type="text/css">
 		body{
 			background-image: url(images/music1.jpg);
@@ -25,6 +28,7 @@
 		}
 		.container {
 			background-color: lightblue;
+			padding-bottom: 20px;
 		}
 	</style>
 </head>
@@ -32,25 +36,17 @@
 	<div class="container">
 		<nav class="navbar navbar-inverse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="templates/Photos.html">Photos</a></li>	
-				<li><a href="templates/Performances.html">Performances</a></li>	
-				<li><a href="templates/Booking.html">Booking</a></li>		
+				<li><a href="/">Home</a></li>
+				<li><a href="templates/Photos">Photos</a></li>	
+				<li><a href="templates/Performances">Performances</a></li>	
+				<li><a href="templates/Booking">Booking</a></li>		
 			</ul>
 		</nav>
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h1 align="center">The Monkees</h1>
-			</div>
-			<div class="col-xs-6">
-				<p>The Monkees, and American rock band. Welcome loyal followers, we have compiled a small selection of your favourite bands music and videos to show you the true talent and passion of these 4 musicians - Micky Dolenz, Michael Nesmith, Peter Tork, Davy Jones. Take a look around the website and discover what really makes The Monkees such an incredible band and for that special occasion we also have a booking page so you can enjoy their performances in person. </p>
-			</div>
-			<div class="col-xs-6">
-				<img src="images/band.jpg" alt="The Monkees"/>
-			</div>
-		</div>
-	</div>
+	<div ng-view>
+
+    </div>
+<script src='js/app.js'></script>
+<script src='js/controller.js'></script>
 </body>
 </html>
