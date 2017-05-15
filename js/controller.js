@@ -10,7 +10,7 @@ angular.module('RouteControllers', [])
 			$scope.clientBooking.sname = $scope.client.sname;
 			$scope.clientBooking.email = $scope.client.email;
 			$scope.clientBooking.phonenum = $scope.client.phonenum;
-			//$scope.clientBooking.bookingdate = $scope.client.bookingdate;
+			$scope.clientBooking.bookingdate = $scope.client.bookingdate;
 			alert('Information submitted sucessfully!');
 		}
 
