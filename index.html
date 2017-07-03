@@ -19,6 +19,14 @@
 			width: 100%;
 			padding: 20px;
 		}
+		video{
+			width: 100%;
+			height: 100%;
+		}
+		audio{
+			width: 100%;
+			height: 100%;
+		}
 		@media (min-width: 942px){
 			img{
 			width: 350px;
@@ -33,20 +41,31 @@
 	</style>
 </head>
 <body>
-	<div class="container">
+	<nav class="container">
 		<nav class="navbar navbar-inverse">
-			<ul class="nav navbar-nav">
+			<nav class="nav navbar-header">
+				<a class="navbar-brand" href="#">MENU</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+	   				<span class="icon-bar"></span>
+           			<span class="icon-bar"></span>
+           			<span class="icon-bar"></span>
+				</button>
+			</nav>
+			<ul id="myCollapsingList" class="nav navbar-nav navbar-collapse collapse">
 				<li><a href="/">Home</a></li>
 				<li><a href="templates/Photos">Photos</a></li>	
 				<li><a href="templates/Performances">Performances</a></li>	
 				<li><a href="templates/Booking">Booking</a></li>		
 			</ul>
 		</nav>
-	</div>
-	<div ng-view>
+	</nav>
+	<section ng-view>
 
-    </div>
+    </section>
 <script src='js/app.js'></script>
 <script src='js/controller.js'></script>
+<script src='js/service.js'></script>
+<script src='http://code.jquery.com/jquery.min.js'></script>
+<script src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
 </body>
 </html>

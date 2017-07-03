@@ -1,4 +1,4 @@
-angular.module('BookingApp', ['ngRoute', 'RouteControllers']);
+angular.module('BookingApp', ['ngRoute', 'RouteControllers', 'UserService']);
 
 angular.module('BookingApp').config(function($locationProvider, $routeProvider){
 	$locationProvider.html5Mode(true);
@@ -18,6 +18,6 @@ angular.module('BookingApp').config(function($locationProvider, $routeProvider){
 	})
 		.when ('/templates/Performances', {
 		templateUrl: 'templates/Performances.html',
-		controller: ''
+		controller: 'LoginController'
 	});
 });
