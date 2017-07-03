@@ -1,34 +1,34 @@
 # The Monkees Website
 
-##Overview
+## Overview
 
-###What is the website for?
+### What is the website for?
 
 - Website to show photos, videos and play music for The Monkees band. Will include a form to submit bookings for the band.
 
-###What does it do?
+### What does it do?
 
 - The form will allow the user to submit a collection of data necessary to book the band, and display sucessful on completion.
 
-###How does it work?
+### How does it work?
 
 - The site uses AngularJS to vaildate and display the information in the console window, and to display a message to the user on sucessful completion. The site is styled with Bootstrap.
 
-##Features
+## Features
 
-###Existing Features
+### Existing Features
 - None yet!
 
-###features left to implement
+### Features left to implement
 
 - User based features
 	- Submit booking form.
 	- Display photo's
 	- Play video
 
-##Tech Used
+## Tech Used
 
-###Some the tech used includes:
+### Some the tech used includes:
 
 - [AngularJS](https://angularjs.org/)
     - We use **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
@@ -39,9 +39,9 @@
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of our libraries and frameworks
 
-##Contributing
+## Contributing
 
-###Getting the code up and running
+### Getting the code up and running
 1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
 2. After you've that you'll need to make sure that you have **npm** and **bower** installed
   1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
